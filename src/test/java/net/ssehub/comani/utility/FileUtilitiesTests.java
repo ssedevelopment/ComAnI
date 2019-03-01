@@ -134,10 +134,10 @@ public class FileUtilitiesTests {
         
         assertEquals("The line number have to be equal to the written file.", 
                 expectedContent.length, extractedContent.size());
-        
+
         for (int i = 0; i < extractedContent.size(); i++) {
             boolean equal = extractedContent.get(i).equals(expectedContent[i]);
-             assertTrue("Content have to be the same." , equal);
+            assertTrue("Content have to be the same.", equal);
         }
     }
     
