@@ -1,17 +1,18 @@
 # ComAnI
+![Build Status](https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI "Build Status")
+
+
 The Commit Analysis Infrastructure (ComAnI) is an open and configurable infrastructure for the extraction and analysis of commits from software repositories. For both tasks, individual plug-ins realize different extraction and analysis capabilities, which rely on the same data model provided by the infrastructure. Hence, any combination of extraction and analysis plug-ins is possible.
 ![ComAnI Overview](/guide/inserts/comani_overview.png "ComAnI Overview")
 ComAnI enables conducting an analysis for a software hosted in a Git repository first and later conducting the same analysis for a different software hosted by SVN (assuming that the analysis is able to cope with the artifacts and their technologies of the new software under analysis). Another example is to use the same commit extractor, e.g., supporting the commit extraction from Git repositories, for different analyses. The definition of a particular ComAnI instance consists of a set of configuration parameters saved in a configuration file, which the infrastructure reads at start-up. Hence, there is no implementation effort needed. The infrastructure automatically performs its internal setup, loads and starts the desired plug-ins.
 
 The [ComAnI Guide](/guide/ComAnI_Guide.pdf) provides more information about the capabilities of the infrastructure. Note that this guide is currently incomplete and will be updated in future to cover all aspects of the infrastructure.
 
-*Available Plug-ins:*
-- [GitCommitExtractor](https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor)
-- [SvnCommitExtractor](https://github.com/CommitAnalysisInfrastructure/SvnCommitExtractor)
-- [VariabilityChangeAnalyzer](https://github.com/CommitAnalysisInfrastructure/VariabilityChangeAnalyzer)
-
 ## Installation
-Download the [ComAnI.jar](/release/ComAnI.jar) file from the release directory and save it to a directory of your choice on your machine.
+Download the desired Jar from jenkins and save it to a directory of your choice on your machine.
+
+- This project (without sources): ComAnI.jar [ComAnI.jar](https://jenkins-2.sse.uni-hildesheim.de/job/OSS_Analysis_ComAnI/lastSuccessfulBuild/net.ssehub.comani$comani-structure/)
+- The whole project with plugins (without sources): TODO
 
 *Requirements:*
 - Java 8 or higher (or equivalents, like OpenJDK)
@@ -28,6 +29,49 @@ The infrastructure can be executed as a typical Java Jar-file, which expects the
 or
 
 `java -jar ComAnI.jar /path/to/configuration-file.properties –i <CommitContent>\n!q!`
+
+## Plugins
+
+The following table lists commonly used plugins for ComAnI.
+<table style="width:100%">
+  <tr>
+    <th>Plugin</th>
+    <th>Type</th>
+    <th>License</th>
+    <th>Download</th>
+    <th>Status</th>
+  </tr>
+  <!-- GitCommitExtractor -->
+  <tr>
+    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
+    <td><b>Commit-Extractor:</b> Extract commits from git repositories</td>
+    <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
+    <td><ul>
+      <li><a href="">JAR</a></li>
+    </ul></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+  </tr>
+  <!-- SvnCommitExtractor -->
+  <tr>
+    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
+    <td><b>Commit-Extractor:</b> Extract commits from git repositories</td>
+    <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
+    <td><ul>
+      <li><a href="TODO">JAR</a></li>
+    </ul></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+  </tr>
+  <!-- VariabilityChangeAnalyzer  -->
+  <tr>
+    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
+    <td><b>Variability-Analyzer:</b>KBuild-based Software Product Lines analyses</td>
+    <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
+    <td><ul>
+      <li><a href="">JAR</a></li>
+    </ul></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+  </tr>
+</table>
 
 ## License
 This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
