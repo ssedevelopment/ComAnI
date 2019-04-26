@@ -12,7 +12,7 @@ The [ComAnI Guide](/guide/ComAnI_Guide.pdf) provides more information about the 
 Download the desired Jar from jenkins and save it to a directory of your choice on your machine.
 
 - This project (without sources): ComAnI.jar [ComAnI.jar](https://jenkins-2.sse.uni-hildesheim.de/job/OSS_Analysis_ComAnI/lastSuccessfulBuild/net.ssehub.comani$comani-structure/)
-- The whole project with plugins (without sources): TODO
+- The whole project with plugins (without sources): [Archive.zip](https://jenkins-2.sse.uni-hildesheim.de/job/OSS_Analysis_ComAniFull/lastSuccessfulBuild/artifact/*zip*/archive.zip)
 
 *Requirements:*
 - Java 8 or higher (or equivalents, like OpenJDK)
@@ -46,30 +46,24 @@ The following table lists commonly used plugins for ComAnI.
     <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
     <td><b>Commit-Extractor:</b> Extract commits from git repositories</td>
     <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
-    <td><ul>
-      <li><a href="">JAR</a></li>
-    </ul></td>
-    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+    <td><a href="https://jenkins-2.sse.uni-hildesheim.de/job/OSS_Analysis_GitCommitExtractor/lastSuccessfulBuild/net.ssehub.comani$comani-extractor-git/">Jenkins Download</a></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_GitCommitExtractor"></td>
   </tr>
   <!-- SvnCommitExtractor -->
   <tr>
-    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
-    <td><b>Commit-Extractor:</b> Extract commits from git repositories</td>
+    <td><a href="https://github.com/CommitAnalysisInfrastructure/SvnCommitExtractor">SvnCommitExtractor</a></td>
+    <td><b>Commit-Extractor:</b> Extract commits from subversion repositories</td>
     <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
-    <td><ul>
-      <li><a href="TODO">JAR</a></li>
-    </ul></td>
-    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+    <td><a href="https://jenkins-2.sse.uni-hildesheim.de/job/OSS_Analysis_SvnCommitExtractor/lastSuccessfulBuild/net.ssehub.comani.extractors$comani-extractor-svn/">Jenkins Download</a></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_SvnCommitExtractor"></td>
   </tr>
   <!-- VariabilityChangeAnalyzer  -->
   <tr>
-    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">GitCommitExtractor</a></td>
+    <td><a href="https://github.com/CommitAnalysisInfrastructure/GitCommitExtractor">VariabilityChangeAnalyzer</a></td>
     <td><b>Variability-Analyzer:</b>KBuild-based Software Product Lines analyses</td>
     <td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></td>
-    <td><ul>
-      <li><a href="">JAR</a></li>
-    </ul></td>
-    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_ComAnI"></td>
+    <td><a href="">Jenkins Download</a></td>
+    <td><img src="https://jenkins-2.sse.uni-hildesheim.de/buildStatus/icon?job=OSS_Analysis_VariabilityChangeAnalyzer"></td>
   </tr>
 </table>
 
